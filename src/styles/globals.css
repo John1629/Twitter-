@@ -73,3 +73,19 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+
+.change-white {
+  color: black;
+}
+
+.button-blue {
+  color: rgb(193, 152, 255);
+  font-weight: bold;
+}
+
+.button-class {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+}
