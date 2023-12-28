@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main>
-      <h1 className="twitter-title">Twitter</h1>
+      <h1 className="twitter-title">Web stand</h1>
       {tweets.map((tweet) => {
         return <Tweet key={tweet.id} tweet={tweet} />;
       })}
