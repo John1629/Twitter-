@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.twitter-title {
+  color: rgb(254, 255, 255);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.gray {
+  color: rgb(122, 122, 122);
+}
+
+.tweet-text {
+  padding-bottom: 1rem;
+}
+
+.twitter-username {
+  font-size: 1rem;
+}
+
+.twitter-name {
+  font-weight: bold;
+}
+
+.pfp {
+  display: block;
+  border-radius: 50%;
+  width: 3rem;
+  object-fit: cover;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.tweet-header img {
+  margin-right: 0.5rem;
+}
+
+.tweet {
+  border-bottom: 1px solid rgb(122, 122, 122);
+  width: 30%;
+  margin: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
